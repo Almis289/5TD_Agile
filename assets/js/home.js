@@ -15,3 +15,21 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false, // Không dừng khi người dùng bấm vào
   },
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("category-toggle");
+  const menu = document.getElementById("category-menu");
+
+  toggle.addEventListener("click", function (e) {
+    e.stopPropagation(); // Ngăn sự kiện click lan ra ngoài
+    menu.classList.toggle("hidden");
+  });
+
+  // Ẩn menu nếu click ra ngoài
+  document.addEventListener("click", function (event) {
+    if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+      menu.classList.add("hidden");
+    }
+  });
+});
+
+
