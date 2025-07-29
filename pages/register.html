@@ -5,60 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign In / Sign Up</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/home.css"/>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Boxicons và Swiper CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   <div class="container" id="container">
     <div class="form-container sign-up-container">
       <form action="#">
-        <h1>Create Account</h1>
+        <h1>Đăng ký</h1>
         <div class="social-icons">
           <a href="#" class="icon"><i class='bx bxl-facebook'></i></a>
           <a href="#" class="icon"><i class='bx bxl-google'></i></a>
-          <a href="#" class="icon"><i class='bx bxl-linkedin'></i></a>
-          <a href="#" class="icon"><i class='bx bxl-github'></i></a>
         </div>
-        <span>or use your email for registration</span>
+        <span>Hoặc sử dụng email để đăng ký</span>
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
-        <button>Sign Up</button>
+        <button>Đăng ký</button>
       </form>
     </div>
 
     <div class="form-container sign-in-container">
       <form action="#">
-        <h1>Sign In</h1>
+        <h1>Đăng nhập</h1>
         <div class="social-icons">
           <a href="#" class="icon"><i class='bx bxl-facebook'></i></a>
           <a href="#" class="icon"><i class='bx bxl-google'></i></a>
-          <a href="#" class="icon"><i class='bx bxl-linkedin'></i></a>
-          <a href="#" class="icon"><i class='bx bxl-github'></i></a>
         </div>
-        <span>or use your email</span>
+        <span>Hoặc sử dụng tài khoản</span>
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
-        <a href="#">Forgot your password?</a>
-        <button>Sign In</button>
+        <a href="#">Quên mật khẩu?</a>
+        <button>Đặng nhập</button>
       </form>
     </div>
 
     <div class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-left">
-          <h1>Welcome Back!</h1>
-          <p>To keep connected with us please login with your personal info</p>
-          <button class="ghost" id="signIn">Sign In</button>
+          <h1>Chào mừng bạn!</h1>
+          <p>Nếu bạn có tài khoản rồi thì hãy đồng hành cùng chúng tôi</p>
+          <button class="ghost" id="signIn">Đăng nhập</button>
         </div>
         <div class="overlay-panel overlay-right">
-          <h1>Hello, Friend!</h1>
-          <p>Enter your personal details and start your journey with us</p>
-          <button class="ghost" id="signUp">Sign Up</button>
+          <h1>Chào mừng bạn!</h1>
+          <p>Nếu bạn là người mới hãy đăng ký để đồng hành với chúng tôi</p>
+          <button class="ghost" id="signUp">Đăng ký</button>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/login.js"></script>
 </body>
 </html>
