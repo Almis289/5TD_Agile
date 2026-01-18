@@ -1,200 +1,139 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    /> 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/home.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang chủ</title>
+
+  <!-- Boxicons và Swiper CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+  
+  <!-- CSS của trang -->
+  <link rel="stylesheet" href="assets/css/home.css"/>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <div class="home">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Banner mẫu -->
-                 <div class="swiper-slide">
-                    <img src="assets/images/6818cd0769a1c_thumbnail.PNG" alt="Banner 1"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/images/6848f3a13db48_Home.webp" alt="Banner 2"/>
-                </div>
-            </div>
-            <!-- Nút điều hướng -->
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
-             <!-- Nút tròn nhỏ -->
-              <div class="swiper-pagination"></div>
-            </div>
-            <!-- Danh mục sản phẩm mới -->
-             <div class="new-product">
-                <h1>Danh Mục Sản Phẩm Mới</h1>
-                <div class="product-list">
-                    <a class="product-box" href="#">
-                        <span class="label-hot">🔥 Mới</span>
-                        <img src="assets/images/pin.jpg" alt="Sản phẩm 1">
-                        <div class="product-name">
-                            <h2>Sản phẩm 1</h2>
-                        </div>
-                    </a>
-                    <a class="product-box" href="#">
-                        <span class="label-hot">🔥 Mới</span>
-                        <img src="assets/images/pin.jpg" alt="Sản phẩm 2">
-                        <div class="product-name">
-                            <h2>Sản phẩm 2</h2>
-                        </div>
-                    </a>
-                    <a class="product-box" href="#">
-                        <span class="label-hot">🔥 Mới</span>
-                        <img src="assets/images/pin.jpg" alt="Sản phẩm 3">
-                        <div class="product-name">
-                            <h2>Sản phẩm 3</h2>
-                        </div>
-                    </a>
-                    <a class="product-box" href="#">
-                        <span class="label-hot">🔥 Mới</span>
-                        <img src="assets/images/pin.jpg" alt="Sản phẩm 4">
-                        <div class="product-name">
-                            <h2>Sản phẩm 4</h2>
-                        </div>
-                    </a>
-                </div>
-                <h3><a href="#">Xem thêm</a></h3>
-            </div>
+  <!-- Navbar -->
+  <div class="main-navbar">
+    <div class="logo">
+      <img src="assets/images/logo5_TD.png" alt="logo5_TD"/>
+    </div>
 
-            <div class="new-product">
-            <h1>Sản phẩm bán chạy</h1>
+    <div class="nav-buttons">
+      <a href="index.html">Trang chủ</a>
+      <div class="dropdown">
+        <a href="javascript:void(0)" id="category-toggle">Danh mục sản phẩm ▾</a>
+        <ul class="dropdown-menu hidden" id="category-menu">
+          <li><a href="pages/new-products.html">Sản phẩm mới</a></li>
+          <li><a href="pages.best-selling-products.html">Sản phẩm bán chạy</a></li>
+          <li><a href="pages/man-products.html">Sản phẩm cho nam</a></li>
+          <li><a href="pages/woman-products.html">Sản phẩm cho nữ</a></li>
+        </ul>
+      </div>
 
-            <div class="product-list">
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 1">
-                <div class="product-name">
-                    <h2>Sản phẩm 1</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 2">
-                <div class="product-name">
-                    <h2>Sản phẩm 2</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 3">
-                <div class="product-name">
-                    <h2>Sản phẩm 3</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 4">
-                <div class="product-name">
-                    <h2>Sản phẩm 4</h2>
-                </div>
-                </a>
-            </div>
-            <h3><a href="#">Xem thêm</a></h3>
-            </div>
+        <a href="pages/man-products.html">Sản phẩm cho nam</a>
+        <a href="pages/woman-products.html">Sản phẩm cho nữ</a>
 
-            <div class="new-product">
-            <h1>Sản phẩm dành cho nam</h1>
+      <!-- Thanh tìm kiếm -->
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..."/>
+        <button><i class='bx bx-search'></i></button>
+      </div>
 
-            <div class="product-list">
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 1">
-                <div class="product-name">
-                    <h2>Sản phẩm 1</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 2">
-                <div class="product-name">
-                    <h2>Sản phẩm 2</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 3">
-                <div class="product-name">
-                    <h2>Sản phẩm 3</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 4">
-                <div class="product-name">
-                    <h2>Sản phẩm 4</h2>
-                </div>
-                </a>
-            </div>
-            <h3><a href="#">Xem thêm</a></h3>
-            </div>
-
-            <div class="new-product">
-            <h1>Sản phẩm dành cho nữ</h1>
-
-            <div class="product-list">
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 1">
-                <div class="product-name">
-                    <h2>Sản phẩm 1</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 2">
-                <div class="product-name">
-                    <h2>Sản phẩm 2</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 3">
-                <div class="product-name">
-                    <h2>Sản phẩm 3</h2>
-                </div>
-                </a>
-                <a class="product-box" href="#">
-                <span class="label-hot">🔥 Mới</span>
-                <img src="assets/images/pin.jpg" alt="Sản phẩm 4">
-                <div class="product-name">
-                    <h2>Sản phẩm 4</h2>
-                </div>
-                </a>
-            </div>
-            <h3><a href="#">Xem thêm</a></h3>
-            </div>
-    <!-- Nếu không có sản phẩm -->
-    <!--
-    <p style="font-size: 20px; padding: 40px 0px;">⚠️ Danh mục này hiện chưa có sản phẩm nào. Vui lòng kiểm tra trong phần quản trị.</p>
-    -->
-
-    <!-- Nếu không có danh sách nào -->
-    <!--
-    <p style="font-size: 20px; padding: 40px 0px;">❗ Hiện không có danh sách hiển thị nào được cấu hình trong trang chủ. Vui lòng kiểm tra bảng <strong>Danh sách trang chủ</strong>.</p>
-    -->
-    <img class="qc" src="assets/images/Capture2.PNG" alt="Quảng cáo">
+      <!-- Dashboard icons -->
+      <div class="dashboard-button">
+        <i class='bx bx-bell'><span class="notify-count">0</span></i>
+        <i class='bx bx-cart'><span class="cart-count">0</span></i>
+        <a href="pages/register.html"><i class='bx bx-user'></i></a>
+      </div>
+    </div>
   </div>
 
-  <script src="assets/js/home.js"></script>
+  <!-- Banner -->
+  <div class="home">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/images/banner01.png" alt="Banner 1"/></div>
+        <div class="swiper-slide"><img src="assets/images/banner02.jpeg" alt="Banner 2"/></div>
+        <div class="swiper-slide"><img src="assets/images/banner03.jpeg" alt="Banner 3"/></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+    <!-- Danh mục sản phẩm -->
+    <div class="new-product">
+      <h1>Sản Phẩm Mới</h1>
+      <div class="product-list">
+        <a class="product-box" href="#"><span class="label-hot">🔥 Mới</span><img src="assets/images/Items.jpg" alt="Sản phẩm 1"/><div class="product-name"><h2>Sản phẩm 1</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Mới</span><img src="assets/images/Items.jpg" alt="Sản phẩm 2"/><div class="product-name"><h2>Sản phẩm 2</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Mới</span><img src="assets/images/Items.jpg" alt="Sản phẩm 3"/><div class="product-name"><h2>Sản phẩm 3</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Mới</span><img src="assets/images/Items.jpg" alt="Sản phẩm 4"/><div class="product-name"><h2>Sản phẩm 4</h2></div></a>
+      </div>
+      <h3><a href="pages/new-products.html">Xem thêm</a></h3>
+    </div>
+
+    <div class="new-product">
+      <h1>Sản phẩm bán chạy</h1>
+      <div class="product-list">
+        <a class="product-box" href="#"><span class="label-hot">🔥 Bán chạy</span><img src="assets/images/Items.jpg" alt="Sản phẩm 1"/><div class="product-name"><h2>Sản phẩm 1</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Bán chạy</span><img src="assets/images/Items.jpg" alt="Sản phẩm 2"/><div class="product-name"><h2>Sản phẩm 2</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Bán chạy</span><img src="assets/images/Items.jpg" alt="Sản phẩm 3"/><div class="product-name"><h2>Sản phẩm 3</h2></div></a>
+        <a class="product-box" href="#"><span class="label-hot">🔥 Bán chạy</span><img src="assets/images/Items.jpg" alt="Sản phẩm 4"/><div class="product-name"><h2>Sản phẩm 4</h2></div></a>
+      </div>
+      <h3><a href="pages/best-selling-products.html">Xem thêm</a></h3>
+    </div>
+
+    <div class="new-product" id="nam">
+      <h1>Sản phẩm cho nam</h1>
+      <div class="product-list">
+        <!-- Tương tự sản phẩm ở trên -->
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 1</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 2</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 3</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 4</h2></div></a>
+      </div>
+      <h3><a href="pages/man-products.html">Xem thêm</a></h3>
+    </div>
+
+    <div class="new-product" id="nu">
+      <h1>Sản phẩm cho nữ</h1>
+      <div class="product-list">
+        <!-- Tương tự sản phẩm ở trên -->
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 1</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 2</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 3</h2></div></a>
+        <a class="product-box" href="#"><img src="assets/images/Items.jpg" alt="SP"/><div class="product-name"><h2>Sản phẩm 4</h2></div></a>
+      </div>
+      <h3><a href="pages/woman-products.html">Xem thêm</a></h3>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="shop-footer">
+    <div class="title-infomation">
+      <h2>5_TD Clothes Store</h2>
+    </div>
+    <div class="footer-container">
+      <div class="contact-info">
+        <h3>Thông tin liên hệ</h3>
+        <p><strong>Địa chỉ:</strong> 123 Đường Thời Trang, Quận 1, TP.HCM</p>
+        <p><strong>Hotline:</strong> 0987 654 321</p>
+      </div>
+      <div class="social-links">
+        <h3>Kết nối với chúng tôi</h3>
+        <a href="https://facebook.com/yourshop" target="_blank"><i class='bx bxl-facebook'></i> Facebook</a>
+        <a href="https://instagram.com/yourshop" target="_blank"><i class='bx bxl-instagram'></i> Instagram</a>
+        <a href="https://tiktok.com/@yourshop" target="_blank"><i class='bx bxl-tiktok'></i> TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- File JavaScript -->
+  <script src="assets/js/home.js"></script>
 </body>
 </html>

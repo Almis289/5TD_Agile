@@ -181,3 +181,92 @@ button.ghost {
   color: #333;
   text-decoration: none;
 }
+
+/*=== CSS CHO TRANG HIỂN THỊ SẢN PHẨM === */
+
+/*=== DASHBOARD ===*/
+.main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.main-navbar .logo img {
+  height: 60px;
+  width: auto;
+  margin-top: 0;
+  object-fit: contain;
+}
+
+/* Các nút điều hướng */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 30px;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  font-weight: 700; /* đậm hơn */
+  font-size: 16px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng hover */
+.nav-buttons a:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*Hiệu ứng button thông báo, giỏ hàng, cá nhân */
+.dashboard-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard-button i {
+  position: relative;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.dashboard-button i:hover {
+  color: #fff;
+  background-color: #333;
+  transform: scale(1.15);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Số lượng thông báo/cart */
+.dashboard-button .notify-count,
+.dashboard-button .cart-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
